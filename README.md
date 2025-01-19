@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Stock Portfolio Frontend
+This is the frontend application for managing stocks in a portfolio, built using React. It interacts with the backend to display, add, and remove stocks from the portfolio. It features charts and tables to visualize stock data and portfolio value.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technologies Used
+React: JavaScript library for building user interfaces.
+Axios: For making HTTP requests to the backend API.
+Material UI: React UI framework for building responsive and stylish components.
+Chart.js: A charting library for visualizing stock data with pie charts and other types of charts.
+Setup
+Prerequisites
+Node.js (LTS version recommended)
+npm or yarn (npm comes bundled with Node.js)
+Steps to Set Up
+Clone the repository:
 
-## Available Scripts
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/stockportfoliofrontend.git
+cd stockportfoliofrontend
+Install dependencies: Install the required npm packages:
 
-In the project directory, you can run:
+bash
+Copy
+Edit
+npm install
+Run the application: Start the development server:
 
-### `npm start`
+bash
+Copy
+Edit
+npm start
+The frontend will be accessible at http://localhost:3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Configure the backend API endpoint: Make sure the backend is running (at http://localhost:8080) and the frontend makes requests to this endpoint. If needed, adjust the endpoint URL in src/services/stockservice.js.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Folder Structure
+src/components: Contains all React components, including the dashboard, stock form, table, etc.
+src/services: Contains the service to interact with the backend API (stockservice.js).
+src/App.js: Main component that manages state and renders the entire app.
+src/App.css: Contains global CSS for styling the application.
+Key Features
+Dashboard: Displays the total value of the stock portfolio and the top stock by value.
+Stock Form: A form to add new stocks to the portfolio.
+Stock Table: Displays a table of all stocks with options to delete.
+Charts: Visualizes the portfolio data with Pie and other chart types.
+API Endpoints
+The frontend interacts with the following API endpoints in the backend:
 
-### `npm test`
+GET /stocks: Retrieves all stocks in the portfolio.
+POST /stocks: Adds a new stock to the portfolio.
+DELETE /stocks/{id}: Deletes a stock by ID.
+Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Future Enhancements
+Add a user authentication system for personalized portfolio management.
+Implement stock price tracking by integrating an external stock price API.
+Add support for updating stock data.

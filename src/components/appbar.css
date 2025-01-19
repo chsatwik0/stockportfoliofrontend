@@ -1,0 +1,45 @@
+/* AppBar Styling */
+.appbar {
+    background-color: #9b59b6; /* Light Purple */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .appbar h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1.5px;
+  }
+  
+  .appbar .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Ensure vertical alignment */
+  }
+  
+  /* Common Button Styling */
+  .nav-btn,
+  .view-portfolio-btn {
+    background-color: black; /* Set button background to black */
+    color: white; /* Set text color to white */
+    font-size: 1.1rem;
+    padding: 10px 20px; /* Uniform padding for all buttons */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover Effect for Buttons */
+  .nav-btn:hover,
+  .view-portfolio-btn:hover {
+    background-color: #333333; /* Slightly lighter black on hover */
+  }
+  
